@@ -1,0 +1,92 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7599520894186034001
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7599520894186034003}
+  - component: {fileID: 7599520894186034000}
+  m_Layer: 0
+  m_Name: BuildingCreator 1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7599520894186034003
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7599520894186034001}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.046756983, y: 1.4264868, z: 0.7436876}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7599520894186034000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7599520894186034001}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 024c5161c5b340d4283a64c94bcc740c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minPieces: 2
+  maxPieces: 4
+  baseParts:
+  - {fileID: 100002, guid: 07ab717c2e9846b4c806676edcd12dca, type: 3}
+  - {fileID: 100002, guid: 9a249853357ca6342ad2c7f248a9eaaa, type: 3}
+  - {fileID: 100002, guid: 1cd7f3674ff21964f8cf0b9aa82a171d, type: 3}
+  middleParts:
+  - {fileID: 100002, guid: e82033d334fc0e54d87f2678db79a7a5, type: 3}
+  - {fileID: 100002, guid: 1e9c1b0a5c0e92a40a51df244c8dcf7a, type: 3}
+  - {fileID: 100002, guid: eab2cfd19ce0a7441bd1370114ee0023, type: 3}
+  - {fileID: 100002, guid: bafaed99666e41d4cab31ed4e79762ca, type: 3}
+  - {fileID: 100002, guid: 3b01455e885ed614997aa8e24c193b71, type: 3}
+  - {fileID: 100002, guid: 361f7e4732783184e9cad273e807273b, type: 3}
+  - {fileID: 100002, guid: 73b99f35024d0774aae115c8fafe3d4f, type: 3}
+  - {fileID: 100002, guid: fabb27bae66b9f2448606fe964ec01c2, type: 3}
+  - {fileID: 100002, guid: 765c83b692363444d972015b94efb4a4, type: 3}
+  - {fileID: 100002, guid: 11f12b093c0618548b21972320fae5ce, type: 3}
+  - {fileID: 100002, guid: 38f3224f1bf0a48409b9b7e407220e0b, type: 3}
+  - {fileID: 100002, guid: 2f861fd79e2a64248a9a772bd4773f84, type: 3}
+  - {fileID: 100002, guid: 5a933565d128f92419bfe58fcf21b388, type: 3}
+  - {fileID: 100002, guid: 02c0afe3e5c66cc4cbf1ce7f0c538f7e, type: 3}
+  - {fileID: 100002, guid: 067b491446f25194daa9fe3b4ccb62e6, type: 3}
+  - {fileID: 100002, guid: f8836c03cffd5134699651967307452b, type: 3}
+  - {fileID: 100002, guid: 02e66731e933e6a40ac7e772958e639b, type: 3}
+  - {fileID: 100002, guid: 1f35782f57da32d4bb3925568fcaa784, type: 3}
+  - {fileID: 100002, guid: 20b552937e17133408d57952eb673b2a, type: 3}
+  - {fileID: 100002, guid: f46be549002f3814f8e61ffd27d2389c, type: 3}
+  - {fileID: 100002, guid: f84056196ab2aba4c8e087f742fa303a, type: 3}
+  - {fileID: 100002, guid: ed36c93bf557ca448a80cb19509a88b2, type: 3}
+  - {fileID: 100002, guid: 33dbdf310fa6ad14dac6c3f4f1d5c4c2, type: 3}
+  topParts:
+  - {fileID: 100002, guid: 090e056e2dd137e459a97fd432aae0ad, type: 3}
+  - {fileID: 100002, guid: 42d191bd4f4c2e842b122602b7c03938, type: 3}
+  - {fileID: 100002, guid: 1a22f99ea3af33644aa9fbce29aebdff, type: 3}
+  - {fileID: 100002, guid: a9d497b936cc31e44951e056ce36f4f6, type: 3}
+  - {fileID: 100002, guid: 6f53af154db96664bb61c6b3c5847e4f, type: 3}
+  - {fileID: 100002, guid: 928e9a9725d038943a9044e60f8229f7, type: 3}
+  - {fileID: 100002, guid: 7f71b16e4f506234182e19d712c8fa70, type: 3}
+  - {fileID: 100002, guid: 535a1db945db6784e89cd1e26decd2e9, type: 3}
+  - {fileID: 100002, guid: aa3fcca3644c8fc43b9a60a9bd134836, type: 3}
+  - {fileID: 100002, guid: 7589127dbd4dca54090aedc86ddf26bf, type: 3}
+  - {fileID: 100002, guid: f2f249b7a33a15d4ebec4300517f3d6a, type: 3}
+  - {fileID: 100002, guid: 5424f2ed196a3ff4b8212ed105842fa7, type: 3}
+  - {fileID: 100002, guid: 75cf817dbb2ca4c4f8f6d424c8a32d84, type: 3}
+  - {fileID: 100002, guid: 3bf63437a84abc8458f54ffe234d34e4, type: 3}
+  - {fileID: 100002, guid: fa018bdb02c62a346a16b0bea7a0aa63, type: 3}
+  facingDir: {x: 0, y: 90, z: 0}
