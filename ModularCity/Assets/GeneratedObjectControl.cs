@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GeneratedObjectControl : MonoBehaviour
 {
@@ -37,6 +38,11 @@ public class GeneratedObjectControl : MonoBehaviour
             
         }
         
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            SceneManager.LoadScene(0);
+        }
+
     }
 
     void Generate()

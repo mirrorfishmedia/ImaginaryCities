@@ -182,7 +182,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &577153770
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -447,7 +447,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 878116674}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -518,13 +518,13 @@ MonoBehaviour:
   randomizeNoiseOffset: 1
   perlinOffset: {x: 5, y: 10}
   noiseScale: 1
-  perlinGridStepSizeX: 40
-  perlinGridStepSizeY: 40
-  visualizeGrid: 0
+  visualizationUI: {fileID: 1665522968}
+  perlinGridSizeX: 40
+  perlinGridSizeY: 40
+  visualizeGrid: 1
   visualizationCube: {fileID: 7508579090207855887, guid: 253ce92c4d6b4ff4b84d7b3f78fb4003,
     type: 3}
   visualizationHeightScale: 20
-  visualizationUI: {fileID: 1665522968}
 --- !u!1 &905399747
 GameObject:
   m_ObjectHideFlags: 0

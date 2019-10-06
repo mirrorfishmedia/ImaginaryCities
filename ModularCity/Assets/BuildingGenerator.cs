@@ -9,8 +9,6 @@ public class BuildingGenerator : MonoBehaviour
     public GameObject[] baseParts;
     public GameObject[] middleParts;
     public GameObject[] topParts;
-    public Vector3 facingDir;
-
 
 
     // Start is called before the first frame update
@@ -38,10 +36,11 @@ public class BuildingGenerator : MonoBehaviour
     float SpawnPieceLayer(GameObject[] pieceArray, float inputHeight)
     {
         Transform randomTransform = pieceArray[Random.Range(0, pieceArray.Length)].transform;
-        GameObject clone = Instantiate(randomTransform.gameObject, this.transform.position + new Vector3 (0, inputHeight, 0), transform.rotation) as GameObject;
+        GameObject clone = Instantiate(randomTransform.gameObject, this.transform.position 
+            + new Vector3 (0, inputHeight, 0), transform.rotation) as GameObject;
         Mesh cloneMesh = clone.GetComponentInChildren<MeshFilter>().mesh;
-        Bounds baseBounds = cloneMesh.bounds;
-        float heightOffset = baseBounds.size.y;
+        Bounds bounds = cloneMesh.bounds;
+        float heightOffset = bounds.size.y;
 
         clone.transform.SetParent(this.transform);
 

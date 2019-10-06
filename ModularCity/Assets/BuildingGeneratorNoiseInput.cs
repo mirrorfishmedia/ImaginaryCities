@@ -12,7 +12,6 @@ public class BuildingGeneratorNoiseInput : MonoBehaviour
     public GameObject[] baseParts;
     public GameObject[] middleParts;
     public GameObject[] topParts;
-    public Vector3 facingDir;
 
     void Start()
     {
@@ -22,7 +21,7 @@ public class BuildingGeneratorNoiseInput : MonoBehaviour
 
     public void Build()
     {
-        float sampledValue = PerlinGenerator.instance.PerlinGridValueFromWorldposition(transform.position);
+        float sampledValue = PerlinGenerator.instance.PerlinSteppedPosition(transform.position);
 
         int targetPieces = Mathf.FloorToInt(maxPieces * (sampledValue));
         targetPieces += Random.Range(randomVariationMin, randomVariationMax);
