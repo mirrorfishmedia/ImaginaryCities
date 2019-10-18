@@ -518,13 +518,13 @@ MonoBehaviour:
   randomizeNoiseOffset: 1
   perlinOffset: {x: 5, y: 10}
   noiseScale: 1
-  visualizationUI: {fileID: 1665522968}
-  perlinGridSizeX: 40
-  perlinGridSizeY: 40
+  perlinGridStepSizeX: 40
+  perlinGridStepSizeY: 40
   visualizeGrid: 1
   visualizationCube: {fileID: 7508579090207855887, guid: 253ce92c4d6b4ff4b84d7b3f78fb4003,
     type: 3}
   visualizationHeightScale: 20
+  visualizationUI: {fileID: 1665522968}
 --- !u!1 &905399747
 GameObject:
   m_ObjectHideFlags: 0

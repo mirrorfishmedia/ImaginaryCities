@@ -12,8 +12,8 @@ public class PerlinGenerator : MonoBehaviour
     public bool randomizeNoiseOffset;
     public Vector2 perlinOffset;
     public float noiseScale = 1f;
-    public int perlinGridStepSizeX;
-    public int perlinGridStepSizeY;
+    public int perlinGridStepSizeX = 4;
+    public int perlinGridStepSizeY = 4;
 
     public bool visualizeGrid = false;
     public GameObject visualizationCube;
