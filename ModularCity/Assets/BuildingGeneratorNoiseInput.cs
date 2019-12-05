@@ -13,11 +13,12 @@ public class BuildingGeneratorNoiseInput : MonoBehaviour
     public GameObject[] middleParts;
     public GameObject[] topParts;
 
+    //create an array of each of these, and then pass that to spawnentity instead of passing the gameobjects and converting each time
+
     void Start()
     {
         Build();
     }
-
 
     public void Build()
     {
@@ -45,16 +46,13 @@ public class BuildingGeneratorNoiseInput : MonoBehaviour
     float SpawnPieceLayer(GameObject[] pieceArray, float inputHeight)
     {
         Transform randomTransform = pieceArray[Random.Range(0, pieceArray.Length)].transform;
-        GameObject clone = Instantiate(randomTransform.gameObject, this.transform.position + new Vector3(0, inputHeight, 0), transform.rotation) as GameObject;
-        Mesh cloneMesh = clone.GetComponentInChildren<MeshFilter>().mesh;
+        Mesh cloneMesh = randomTransform.GetComponentInChildren<MeshFilter>().sharedMesh;
         Bounds baseBounds = cloneMesh.bounds;
         float heightOffset = baseBounds.size.y;
 
-        clone.transform.SetParent(this.transform);
+        GameObject clone = Instantiate(randomTransform.gameObject, this.transform.position + new Vector3(0, inputHeight, 0), transform.rotation) as GameObject;
 
-        GeneratedObjectControl.instance.AddObject(clone);
 
         return heightOffset;
     }
-
 }

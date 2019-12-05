@@ -19,7 +19,7 @@ public class PerlinGenerator : MonoBehaviour
     public GameObject visualizationCube;
     public float visualizationHeightScale = 5f;
     public RawImage visualizationUI;
-
+    public EntitySpawner entitySpawner;
 
     private Texture2D perlinTexture;
 
